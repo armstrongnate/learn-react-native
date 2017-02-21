@@ -12,6 +12,10 @@ import {
   View
 } from 'react-native';
 
+function multiply(n1: number, n2: number): number {
+  return n1 * n2;
+}
+
 export default class FlowApp extends Component {
   render() {
     return (
@@ -26,6 +30,7 @@ export default class FlowApp extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
+        <Text>{multiply(14, 'a')}</Text>
       </View>
     );
   }
