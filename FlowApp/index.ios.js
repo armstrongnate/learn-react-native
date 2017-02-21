@@ -30,7 +30,7 @@ export default class FlowApp extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
-        <Text>{multiply(14, 'a')}</Text>
+        <Text>{multiply(14, 10)}</Text>
       </View>
     );
   }
