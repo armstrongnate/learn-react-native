@@ -1,0 +1,3 @@
+[submodule "MarsRovers"]
+	path = MarsRovers
+	url = git@github.com:n8armstrong/MarsRovers.git
