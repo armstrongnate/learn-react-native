@@ -27,3 +27,14 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_error_symbol = '✘'
 let g:syntastic_warning_symbol = "!"
 ```
+
+## Watch mode
+
+Add the `flow-watch` command to `~/.bash_profile`.
+```bash
+# flow watch
+flow-watch () {
+  npm run flow status;
+  fswatch -e "/\." -o . | xargs -n1 -I{} npm run flow status;
+}
+```
